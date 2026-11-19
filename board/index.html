@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Live submissions · Software Factory Demo</title>
+  <script type="module" src="/client/board.ts"></script>
+</head>
+<body class="stage">
+  <main class="stage-main">
+    <div class="stage-header">
+      <h1>Live submissions</h1>
+      <button id="refresh" type="button">Refresh</button>
+    </div>
+    <form id="find-issue" class="find-issue">
+      <label for="number">Issue number</label>
+      <input id="number" name="number" type="number" min="1" step="1" required inputmode="numeric">
+      <button type="submit">Follow issue</button>
+    </form>
+    <p id="board-status" class="hint" role="status"></p>
+    <ol id="issues" class="issues" aria-label="Recent submissions"></ol>
+    <section id="selected" class="issue-detail" aria-live="polite" hidden></section>
+  </main>
+</body>
+</html>
