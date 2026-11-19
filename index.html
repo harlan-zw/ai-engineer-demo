@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Suggest a small website change during Harlan Wilton’s Software Factory talk at AI Engineer Sydney.">
+  <title>Software Factory Demo · AI Engineer Sydney</title>
+  <script type="module" src="/client/feedback.ts"></script>
+</head>
+<body>
+  <header class="site-header shell">
+    <a class="identity" href="/">Software Factory Demo</a>
+    <a href="https://webdirections.org/ai-engineer/">Official conference site</a>
+  </header>
+  <main class="shell landing">
+    <section class="intro">
+      <p class="event">AI Engineer Sydney · 8 December 2026</p>
+      <h1>Give the factory<br>one small fix.</h1>
+      <p class="lead">Suggest a change to this demo site. Your feedback becomes a GitHub issue we can follow during the talk.</p>
+      <p class="talk">Harlan Wilton<br><a href="https://webdirections.org/ai-engineer/speakers/harlan-wilton/">Should You Build a Software Factory?</a></p>
+    </section>
+    <section class="feedback" aria-labelledby="feedback-title">
+      <h2 id="feedback-title">Suggest a change</h2>
+      <form id="feedback-form">
+        <label for="region">Which part?</label>
+        <select id="region" name="region">
+          <option value="whole">The whole page</option>
+          <option value="intro">Talk and event details</option>
+          <option value="form">Feedback form</option>
+        </select>
+        <label for="feedback">What would you change?</label>
+        <textarea id="feedback" name="feedback" rows="5" minlength="10" maxlength="600" required aria-describedby="public-note" placeholder="Make the talk link easier to spot."></textarea>
+        <div hidden><label for="website">Leave this empty</label><input id="website" name="website" autocomplete="off" tabindex="-1"></div>
+        <p id="public-note" class="hint">Your suggestion will be public. Leave out personal details.</p>
+        <button type="submit">Submit suggestion</button>
+        <div id="feedback-result" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  <footer class="shell footer">
+    <p>Audience demo by Harlan Wilton</p>
+    <nav aria-label="Demo links"><a href="/board/">Live submissions</a><a href="https://github.com/harlan-zw/ai-engineer-demo">Source on GitHub</a></nav>
+  </footer>
+</body>
+</html>
