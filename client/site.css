@@ -55,7 +55,7 @@ button:disabled { opacity: .65; cursor: wait; }
 #feedback-result { margin-block-start: 1rem; }
 .footer { border-top: 1px solid var(--line); color: var(--muted); }
 .footer nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
-.stage { background: #100c17; }
+.stage { background: #100c17; font-size: clamp(1rem, 2vw, 1.7rem); }
 .stage-main { padding: clamp(1rem, 3vw, 2.5rem); max-width: 76rem; margin: auto; }
 .stage-header, .find-issue, .issue-line { display: flex; align-items: center; gap: .75rem 1rem; flex-wrap: wrap; }
 .stage-header { justify-content: space-between; }
